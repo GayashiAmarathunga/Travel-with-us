@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Query Form</title>
+  <link rel="stylesheet" type="text/css" href="Query.css">
+  <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+  <!--===========Navigation Bar=================-->
+  <div class="Navigation">
+    <ul>
+      <li><a href="MainPage.html">Home</a></li>
+      <li><a href="IdealJob.html">Ideal Job</a></li>
+      <li class="live"><a href="#">Query Form</a></li>
+      <li><a href="SVG.html">SVG Diagram</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li></li>
+      <img id="logo" src="image/engineer.png" alt="logo">
+    </ul>
+  </div>
+
+  <div id="form-container">
+    <h2>Send a Query</h2>
+    <form id="query-form" onsubmit="event.preventDefault();">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" required>
+        <option value="">Select a subject</option>
+        <option value="programming-experience">Programming Experience</option>
+        <option value="other-experience">Other Experience</option>
+        <option value="transferable-skills">Transferable Skills</option>
+      </select>
+
+      <label for="query-details">Query Details:</label>
+      <textarea id="query-details" rows="4" required></textarea>
+
+      <button type="button" id="view-query-button" onclick="viewQuery()">View Query</button>
+    </form>
+  </div>
+
+  <div id="query-summary" style="display: none;">
+    <h2>Query Summary</h2>
+    <p id="name-summary"></p>
+    <p id="email-summary"></p>
+    <p id="subject-summary"></p>
+    <p id="query-details-summary"></p>
+    <button type="button" onclick="editQuery()">Edit</button>
+    <button type="button" onclick="sendQuery()">Send</button>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+<footer>
+  <p>To apply, please send your resume and cover letter to <a href="mailto: amanda.bailey@email.com">Send Email</a>
+  </p>
+</footer>
+
+</html>

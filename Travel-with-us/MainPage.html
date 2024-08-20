@@ -1,0 +1,142 @@
+<html>
+<header>
+    <title>Main Page</title>
+    <style></style>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="mainPage.css">
+</header>
+
+<body>
+    <!--===========Navigation Bar=================-->
+    <div class="Navigation">
+        <ul>
+            <li class="live"><a href="#">Home</a></li>
+            <li><a href="IdealJob.html">Ideal Job</a></li>
+            <li><a href="QueryForm.html">Query Form</a></li>
+            <li><a href="SVG.html">SVG Diagram</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li></li>
+            <img id="logo" src="image/engineer.png" alt="logo">
+        </ul>
+    </div>
+
+    <div class="Profile">
+        <div id="ProfileDetais">
+            <div>
+                <div class="slideshow">
+                    <div class="mySlides">
+                        <h3>Hi, I am Amanda Bailey<br></h3>
+                        <p>Software Engineer</p>
+                    </div>
+                    <div class="mySlides">
+                        <h3>Skills <br> </h3>
+                        <dl>
+                            <dt><b>Languages:</b></dt>
+                            <dd>Java, Python, JavaScript</dd>
+                            <dt><br></dt>
+                            <dt><b>Development:</b></dt>
+                            <dd>HTML, CSS, JavaScript, React, Node.js</dd>
+                            <dt><br></dt>
+                            <dt><b>Mobile Development:</b></dt>
+                            <dd>Android (Java/Kotlin)</dd>
+                            <dt><br></dt>
+                            <dt><b>Programming Languages:</b></dt>
+                            <dd>Java, Python, JavaScript</dd>
+                        </dl>
+                    </div>
+
+                    <div class="mySlides">
+                        <h3>Projects <br> </h3>
+                        <dl>
+                            <dt><b>E-commerce Website:</b></dt>
+                            <dd>Developed a responsive e-commerce website using React, Node.js, and MongoDB, allowing
+                                users to browse and purchase products securely.</dd>
+                            <dt><br></dt>
+                            <dt><b>Expense Tracker Application:</b></dt>
+                            <dd>Created a mobile expense tracker application for Android using Java, enabling users to
+                                track and manage their expenses on the go.</dd>
+                        </dl>
+                        <h3>Education</h3>
+                        <dl>
+                            <dt>Bachelor of Science in Computer Science | University of XYZ | New City, Second State.
+                            </dt>
+                        </dl>
+
+                    </div>
+
+                </div>
+
+                <div class="dot-container" style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <p id="Detais">Amanda Bailey is a highly skilled and enthusiastic Software Engineer with a strong emphasis
+                on
+                constructing elegant and efficient solutions to difficult problems. She thrives in dynamic and
+                collaborative environments where she can contribute her programming skills and expertise. She has a firm
+                foundation in programming and a desire for continuous learning. <br>
+
+                Amanda is proficient in a variety of programming languages and technologies, granting her a
+                comprehensive knowledge of software development principles, algorithms, and data structures. This
+                understanding enables her to design, develop, and maintain scalable software applications with a strong
+                emphasis on dependability, performance, and security. <br>
+
+                Amanda has worked on a variety of initiatives spanning multiple domains throughout her tenure, including
+                web and mobile applications as well as enterprise software systems. She flourishes at assessing user
+                needs, translating them into technical specifications, and delivering high-quality software solutions
+                within the specified timeframe. Amanda is distinguished by her ability to comprehend and meet the
+                requirements of end-users while maintaining technical excellence. <br>
+
+                Amanda is a collaborative team player who relishes working closely with cross-functional teams in
+                addition to her technical expertise. She recognises the significance of effective communication and
+                collaboration with product managers, designers, and quality assurance professionals to ensure the
+                successful completion of projects. <br>
+
+                Amanda's passion for innovation and problem-solving motivates her to perpetually expand her skill set
+                and keep abreast of technological advancements. She is a committed student who actively pursues
+                opportunities for professional development. <br>
+
+                Overall, Amanda Bailey is a skilled Software Engineer with a dedication to excellence. Her diverse
+                experience, technical expertise, and collaborative nature make her an asset to any software development
+                team or organisation seeking to deliver scalable, high-quality solutions to complex problems.
+            </p>
+        </div>
+
+
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change slide every 3 seconds
+        }
+
+        // JavaScript code to redirect to the main page after 3 seconds
+        // setTimeout(function () {
+        //     window.location.href = "minePage.html";
+        // }, 3000);
+    </script>
+</body>
+<footer>
+    <p>To apply, please send your resume and cover letter to <a href="mailto: amanda.bailey@email.com">Send Email</a>
+    </p>
+</footer>
+
+</html>

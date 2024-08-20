@@ -1,0 +1,38 @@
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+.mySlides {
+    display: none;
+    padding: 10px;
+    text-align: center;
+  }
+
+.slideshow {
+    position: relative;
+    background: #f1f1f1f1;
+    height: 320px;
+  }
+  .dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #3caaf3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #005e9c;
+  }
+  #Detais{
+    padding: 20px;
+    text-align: justify;
+    text-decoration: none;
+  }

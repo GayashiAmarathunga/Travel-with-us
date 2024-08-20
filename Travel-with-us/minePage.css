@@ -1,0 +1,31 @@
+/* CSS styles for the presentation page */
+  h1 {
+    font-size: 48px;
+    color: #000000;
+    animation: fadeOut 3s linear forwards;
+  }
+  p{
+    font-size: 28px;
+    color: #000000;
+    animation: fadeOut 3s linear forwards;
+  }
+
+  @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  } 
+
+  #preLoader{
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    /* z-index: 100; */
+    text-align: center;
+
+  }
+  

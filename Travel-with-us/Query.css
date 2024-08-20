@@ -1,0 +1,35 @@
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #view-query-button {
+    margin-top: 20px;
+  }
+  
+  #query-summary {
+    display: none;
+    margin-top: 30px;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  
+  #form-container{
+padding: 15px;
+  }
